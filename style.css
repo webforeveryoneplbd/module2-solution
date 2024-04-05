@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size:xx-large;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section {
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.title-region1 {
+    background-color: #ddd;
+    border: 1px solid black;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px 10px;
+    font-size: 0.75em;
+
+}
+.title-region2 {
+    background-color: #dbadad;
+    border: 1px solid black;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px 10px;
+    font-size: 0.75em;
+}
+.title-region3 {
+    background-color: #7dc1df;
+    border: 1px solid black;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px 10px;
+    font-size: 0.75em;
+}
+
+h2 {
+    margin: 0;
+    font-size:medium;
+
+}
+
+p {
+    margin: 0;
+    padding: 10px;
+    font-size: 1em;
+}
+
+@media (max-width: 991px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .section {
+        width: 49%;
+    }
+
+    .section-2 {
+        clear: both;
+    }
+
+    .title-region1 {
+        top: 0;
+        right: 0;
+        background-color:#ddd;
+    }
+    .title-region2 {
+        top: 0;
+        right: 0;
+        background-color:  #dbadad;
+    }
+    .title-region3 {
+        top: 0;
+        right: 0;
+        background-color: #7dc1df;
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        width: 100%;
+    }
+    .title-region1 {
+        top: 0;
+        right: 0;
+        background-color: #ddd;
+    }
+    .title-region2 {
+        top: 0;
+        right: 0;
+        background-color: #dbadad;
+    }.title-region3 {
+        top: 0;
+        right: 0;
+        background-color: #7dc1df;
+    }
+}
